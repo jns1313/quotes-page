@@ -38,3 +38,7 @@ menu.addEventListener('click', (e) => {
     e.preventDefault(); // prevents scrolling to top when clicking
     nav.classList.toggle('show-nav');
 })
+
+window.onscroll = () => {
+    nav.classList.remove('show-nav');
+}
