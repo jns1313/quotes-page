@@ -29,3 +29,12 @@ btns.forEach((btn) => {
         };
     });
 });
+
+// event handler for menu
+const menu = document.getElementById('menu');
+const nav = document.querySelector('.nav-collapse');
+
+menu.addEventListener('click', (e) => {
+    e.preventDefault(); // prevents scrolling to top when clicking
+    nav.classList.toggle('show-nav');
+})
